@@ -5,3 +5,4 @@ private int prueba;
 private float weight;
 private int hiqtal;
 }
+
