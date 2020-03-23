@@ -1,8 +1,9 @@
 package pojosEntities;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class MedicalHistory
+public class MedicalHistory implements Serializable 
 {
 	private Integer ID;
 	private String Name;
@@ -27,7 +28,9 @@ public class MedicalHistory
 		WeightKg = weightKg;
 		HeightKg = heightKg;
 	}
-	
+	public MedicalHistory() {
+		super();
+	}
 	public Integer getID() 	{return ID;	}
 	public void setID(Integer iD) {	ID = iD;}
 	public String getName() {return Name;	}

@@ -20,8 +20,10 @@ public class Patient implements Serializable {
 		super();
 	}
 	
-	public Patient(int id, String name, String address, Date dob, Integer phoneNumber, 
-					String eMail, String sport, String disability) {
+	
+	public Patient(Integer id, String name, String address, Date dob, Integer phoneNumber, String eMail, String sport,
+			String disability) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.address = address;
@@ -30,13 +32,12 @@ public class Patient implements Serializable {
 		this.eMail = eMail;
 		this.sport = sport;
 		this.disability = disability;
-		
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	public Integer getId() {
 		return id;
 	}
